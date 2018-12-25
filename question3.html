@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link type="text/css" rel="stylesheet" href="example.css">
+
+</script>
+</head>
+<body>
+<!--><div class="image"><img src="india.jpg" srcset= "india.jpg 450w, india.jpg 900w" alt="INDIA" /></div><!-->
+<picture>
+	<img src="india" alt="I love India"/>
+</picture>
+<picture>
+	<source media="(min-width:30em)" srcset="india.jpg">
+	<source media="(min-width:60em)" srcset="india.jpg">
+		<img src="india.jpg" alt="I love India"/>
+
+</picture>
+
+</body>
+</html>

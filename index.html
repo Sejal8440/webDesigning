@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)http://intranet.daiict.ac.in/~daiict_nt01/Lecture/Lavneet%20Singh/IT629/WebSite2/WebSite2/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Communication</title>
+    <script>
+        function updateH2() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4)
+                    document.getElementById("change").innerHTML = this.responseText;
+            };
+            xhr.open("GET", "http://localhost:8000", true);
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2 id="change">This needs an update</h2>
+        <button type="button" onclick="updateH2()">Update using AJAX!</button>
+    </div>
+
+</body>
+</html>

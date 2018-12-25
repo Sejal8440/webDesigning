@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        @media screen and (min-width: 320px) {
+            body {
+                background-color: green;
+            }
+        }
+        @media screen and (min-width: 550px) {
+            body {
+                background-color: yellow;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            body {
+                background-color: orange;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+
+    <style>
+        .CardLink {
+            display: block;
+            color: #666;
+            text-shadow: 0 2px 0 #efefef;
+            text-decoration: none;
+            height: 2.75rem;
+            line-height: 2.75rem;
+            border-bottom: 1px solid #bbb;
+            position: relative;
+        }
+        @media (min-width: 400px) {
+            .CardLink {
+                padding-left: 1.8rem;
+                font-size: 1.6rem;
+            }
+        }
+
+        .CardLink:before {
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+
+        .CardLink_Hearts:before {
+            content: "♥";
+        }
+
+        .CardLink_Clubs:before {
+            content: "♣";
+        }
+        .CardLink_Spades:before {
+            content: "♠";
+        }
+
+        .CardLink_Diamonds:before {
+            content: "♦";
+        }
+
+        @media (min-width: 400px) {
+            .CardLink:before {
+                display: block;
+            }
+        }
+    </style>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Wrap {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .Header {
+            width: 100%;
+            height: 130px;
+            background-color: #038C5A;
+        }
+
+        .WrapMiddle {
+            width: 100%;
+            font-size: 0;
+        }
+
+        .Left {
+            height: 625px;
+            width: 20.8333333%;
+            background-color: #03A66A;
+            display: inline-block;
+        }
+
+        .Middle {
+            height: 625px;
+            width: 68.75%;
+            background-color: #bbbf90;
+            display: inline-block;
+        }
+
+        .Right {
+            height: 625px;
+            width: 10.4166667%;
+            background-color: #03A66A;
+            display: inline-block;
+        }
+
+        .Footer {
+            height: 200px;
+            width: 100%;
+            background-color: #025059;
+        }
+    </style>
+
+    <style>
+        .CenterMe {
+            background-color: indigo;
+            color: #ebebeb;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <section>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Proin viverra ligula ac ipsum blandit cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed lacinia ante ut sollicitudin porta. Donec congue congue ex nec porta.</p>
+        </section>
+        <section>
+            <h2>
+                Vestibulum eget eros magna
+            </h2>
+            <p>Phasellus aliquam viverra dui a congue. Proin a accumsan quam, eget sagittis lorem. Etiam eu laoreet nunc. Sed odio felis, volutpat et posuere id, tincidunt id orci. Praesent id sem tincidunt, placerat nisi a, laoreet nibh. Sed in massa non augue faucibus finibus. Donec eleifend libero ac</p>
+        </section>
+        <section>
+            <h2>Sed urna dui, dictum sed risus dignissim</h2>
+            <p>venenatis pharetra tellus. Nulla condimentum nibh eu ex vestibulum mattis. Donec vel consectetur elit, id vulputate felis. Ut laoreet, est dictum dapibus tincidunt, diam felis fringilla massa, nec aliquam nisl diam at nibh. Fusce vestibulum dolor ac diam tincidunt vestibulum.</p>
+        </section>
+    </article>
+
+    <section>
+        <a href="#" class="CardLink CardLink_Hearts">Hearts</a>
+        <a href="#" class="CardLink CardLink_Clubs">Clubs</a>
+        <a href="#" class="CardLink CardLink_Spades">Spades</a>
+        <a href="#" class="CardLink CardLink_Diamonds">Diamonds</a>
+    </section>
+
+    <div class="Wrap">
+        <div class="Header"></div>
+        <div class="WrapMiddle">
+            <div class="Left"></div>
+            <div class="Middle"></div>
+            <div class="Right"></div>
+        </div>
+        <div class="Footer"></div>
+    </div>
+
+    <div class="CenterMe">
+        Hello, I'm centered with Flexbox!
+    </div>
+</body>
+</html>

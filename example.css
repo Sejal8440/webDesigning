@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .wrapper {
+            display:flex;
+            flex-direction:row;
+        }
+        .shade10 {
+            background-color: #000000;
+            height: 100px;
+            flex: 0.10 0 auto;
+        }
+        .shade20 {
+            background-color: #353535;
+            height: 100px;
+            flex: 0.20 0 auto;
+        }
+        .shade30 {
+            background-color: #656565;
+            height: 100px;
+            flex: 0.30 0 auto;
+        }
+        .shade40 {
+            background-color: #959595;
+            height: 100px;
+            flex: 0.40 0 auto;
+        }
+    </style>
+</head>
+<body class="wrapper">
+    <div class="shade10"></div>
+    <div class="shade20"></div>
+    <div class="shade30"></div>
+    <div class="shade40"></div>
+</body>
+</html>
